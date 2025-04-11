@@ -1,5 +1,6 @@
 import { filterOptions } from "@/constants/constants";
 import { Button } from "./ui/button";
+import { Search } from "lucide-react";
 
 const SearchAndFilter = () => {
    const selected = "All";
@@ -9,10 +10,11 @@ const SearchAndFilter = () => {
          <section className="flex gap-2 w-full items-center">
             <input
                type="text"
-               className="w-full bg-[#1E1E1E] placeholder:text-xs py-[0.3rem] px-4 rounded-sm "
+               className="w-full bg-[#1E1E1E] placeholder:text-xs py-[0.3rem] px-4 rounded-sm outline-none"
                placeholder="Search for homework questions... "
             />
-            <Button className="text-xs cursor-pointer border-white/30 border-[1px]">
+            <Button className="text-xs cursor-pointer bg-gray-900 border border-gray-500">
+               <Search />
                Search
             </Button>
          </section>
